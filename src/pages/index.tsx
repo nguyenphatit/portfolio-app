@@ -13,13 +13,7 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <div className="h-screen">
-                <HeroSection />
-                <HeroSection />
-                <HeroSection />
-                <HeroSection />
-            </div>
+            <HeroSection />
         </>
     );
 };
