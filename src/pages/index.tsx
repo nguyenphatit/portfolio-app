@@ -1,6 +1,7 @@
-import HeroSection from "components/HeroSection";
 import type { NextPage } from "next";
 import Head from "next/head";
+import HeroSection from "components/Home/HeroSection";
+import AboutSection from "components/Home/AboutSection";
 
 const Home: NextPage = () => {
     return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <HeroSection />
+            <AboutSection />
         </>
     );
 };

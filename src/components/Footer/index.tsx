@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
+import settings from "common/app-settings.json";
 
 const Footer: FC = () => {
     const year = new Date().getFullYear();
@@ -7,7 +8,7 @@ const Footer: FC = () => {
         <div className="mx-auto px-2 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between border-t border-secondary py-4">
                 <div className="font-bold font-body text-2xl text-dark">
-                    Tour De Force
+                    {settings.appName}
                 </div>
                 <div className="font-body text-secondary">
                     <ul className="flex flex-row">
@@ -22,7 +23,7 @@ const Footer: FC = () => {
                             </Link>
                         </li>
                         <li className="pl-4">
-                            @{year} Tour De Force. All rights reserved.
+                            @{year} {settings.appName}. All rights reserved. Version {settings.appVersion}
                         </li>
                     </ul>
                 </div>
