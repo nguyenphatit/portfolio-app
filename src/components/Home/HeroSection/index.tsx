@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const Wrapper = styled.section`
     background-color: #132b79;

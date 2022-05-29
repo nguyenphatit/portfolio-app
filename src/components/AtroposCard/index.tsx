@@ -1,7 +1,12 @@
 import Atropos from "atropos/react";
 import "atropos/css";
+import { FC } from "react";
 
-const AtroposCard = () => {
+interface Props {
+    children: React.ReactNode;
+}
+
+const AtroposCard: FC<Props> = ({ children }) => {
     return (
         <Atropos
             activeOffset={40}
@@ -9,9 +14,9 @@ const AtroposCard = () => {
             onEnter={() => console.log("Enter")}
             onLeave={() => console.log("Leave")}
             onRotate={(x, y) => console.log("Rotate", x, y)}
-            className="w-[320px] h-[160px]"
+            className="rounded-lg"
         >
-            <div className="bg-primary h-full">Hello</div>
+            {children}
         </Atropos>
     );
 };

@@ -4,6 +4,7 @@ import settings from "common/app-settings.json";
 import HeroSection from "components/Home/HeroSection";
 import AboutSection from "components/Home/AboutSection";
 import Contact from "components/Home/ContactSection";
+import BackToTop from "components/Home/BackToTop";
 
 const Home: NextPage = () => {
     return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
             <HeroSection />
             <AboutSection />
             <Contact />
+            <BackToTop />
         </>
     );
 };

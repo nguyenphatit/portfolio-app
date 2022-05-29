@@ -1,11 +1,12 @@
+import AtroposCard from "components/AtroposCard";
 import Image from "next/image";
 import TextCard from "../TextCard";
 
 const AboutSection = () => {
     return (
         <>
-            <section className="bg-[#F5F5F7]">
-                <div className="container mx-auto py-20">
+            <section className="bg-[#F5F5F7] py-10">
+                <div className="container mx-auto">
                     <div className="w-full">
                         <h1 className="text-6xl font-bold text-success py-10 mx-1 md:mx-auto">
                             About.
@@ -35,14 +36,15 @@ const AboutSection = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#F5F5F7]">
-                <div className="container mx-auto py-20">
+            <section className="bg-[#F5F5F7] py-10">
+                <div className="container mx-auto">
                     <div className="mx-1 md:mx-auto">
                         <h1 className="text-6xl font-bold text-dark py-10">
                             Highlights.
                         </h1>
-                        <div className="font-bold text-dark text-lg w-full sm:w-3/4 leading-relaxed pl-6">
-                            <ol className="list-disc">
+                        <div className="font-bold text-dark text-lg w-full sm:w-3/4 leading-relaxed">
+                            <div>2018 - Present: Working at TMA Solutions</div>
+                            <ol className="list-disc pl-6">
                                 <li>3 years React.JS development</li>
                                 <li>2 years Node.JS development</li>
                                 <li>1+ years Angular development</li>
@@ -56,8 +58,8 @@ const AboutSection = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#F5F5F7]">
-                <div className="container mx-auto py-20 pb-5">
+            <section className="bg-[#F5F5F7] py-10">
+                <div className="container mx-auto">
                     <div className="mx-1 md:mx-auto">
                         <h1 className="text-6xl font-bold text-error py-10">
                             Skills.
@@ -79,65 +81,71 @@ const AboutSection = () => {
                         />
                     </div>
                 </div>
-                <div className="container mx-auto py-20 pt-5">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
-                            backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
-                            headingTxt="Speed"
-                            headingStyle="font-bold text-error text-2xl"
-                            bodyTxt="How quickly the client wants their website,
+                <div className="container mx-auto py-5 pt-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <AtroposCard>
+                            <TextCard
+                                className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                                backgroundColor="#ffffff"
+                                backgroundImage="images/watercolor.jpg"
+                                headingTxt="Speed"
+                                headingStyle="font-bold text-error text-2xl"
+                                bodyTxt="How quickly the client wants their website,
                                 and accordingly what tools will ensure high
                                 levels of speed."
-                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
-                        />
-                        <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
-                            backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
-                            headingTxt="Efficiency"
-                            headingStyle="font-bold text-error text-2xl"
-                            bodyTxt="Making sure not to waste resources, time
+                                bodyStyle="text-dark text-lg w-full pb-10 font-bold"
+                            />
+                        </AtroposCard>
+                        <AtroposCard>
+                            <TextCard
+                                className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                                backgroundColor="#ffffff"
+                                backgroundImage="images/watercolor.jpg"
+                                headingTxt="Efficiency"
+                                headingStyle="font-bold text-error text-2xl"
+                                bodyTxt="Making sure not to waste resources, time
                             and/or effort, so users can get the most out
                             of the final product."
-                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
-                        />
-
-                        <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
-                            backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
-                            headingTxt="Ease-of-use"
-                            headingStyle="font-bold text-error text-2xl"
-                            bodyTxt="The site needs to be easy to use, easy
+                                bodyStyle="text-dark text-lg w-full pb-10 font-bold"
+                            />
+                        </AtroposCard>
+                        <AtroposCard>
+                            <TextCard
+                                className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                                backgroundColor="#ffffff"
+                                backgroundImage="images/watercolor.jpg"
+                                headingTxt="Ease-of-use"
+                                headingStyle="font-bold text-error text-2xl"
+                                bodyTxt="The site needs to be easy to use, easy
                             enough so users can navigate through the
                             site without breaking a sweat."
-                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
-                        />
-
-                        <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
-                            backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
-                            headingTxt="Impact"
-                            headingStyle="font-bold text-error text-2xl"
-                            bodyTxt="As the representation of you or your
+                                bodyStyle="text-dark text-lg w-full pb-10 font-bold"
+                            />
+                        </AtroposCard>
+                        <AtroposCard>
+                            <TextCard
+                                className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                                backgroundColor="#ffffff"
+                                backgroundImage="images/watercolor.jpg"
+                                headingTxt="Impact"
+                                headingStyle="font-bold text-error text-2xl"
+                                bodyTxt="As the representation of you or your
                             business online, the site should leave an
                             impact that encourages users to visit again."
-                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
-                        />
+                                bodyStyle="text-dark text-lg w-full pb-10 font-bold"
+                            />
+                        </AtroposCard>
                     </div>
                 </div>
             </section>
-            <section className="bg-[#F5F5F7]">
-                <div className="container mx-auto py-20">
+            <section className="bg-[#F5F5F7] py-10">
+                <div className="container mx-auto">
                     <div className="mx-1 md:mx-auto">
                         <h1 className="text-6xl font-bold text-primary py-10">
                             Featured Projects.
                         </h1>
                     </div>
-                    <div className="container mx-auto py-20 pt-5">
+                    <div className="container mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"

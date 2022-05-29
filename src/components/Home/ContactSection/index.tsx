@@ -11,34 +11,32 @@ const Link = styled.a`
     }
 `;
 
-const Contact = () => {
-    return (
-        <section className="bg-[#F5F5F7]">
-            <div className="container mx-auto py-20">
-                <div className="w-full">
-                    <h1 className="text-6xl font-bold text-warning py-10 mx-1 md:mx-auto">
-                        Contact.
-                    </h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {settings.contacts.map((contact) => (
-                            <Link
-                                key={contact.via}
-                                target="_blank"
-                                href={contact.url}
-                                className="font-bold text-xl"
-                                rel="noreferrer"
-                            >
-                                {contact.via}{" "}
-                                <span className="material-symbols-outlined text-sm">
-                                    open_in_new
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
+const Contact = () => (
+    <section className="bg-[#F5F5F7] py-10">
+        <div className="container mx-auto">
+            <div className="w-full">
+                <h1 className="text-6xl font-bold text-warning py-10 mx-1 md:mx-auto">
+                    Contact.
+                </h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {settings.contacts.map((contact) => (
+                        <Link
+                            key={contact.via}
+                            target="_blank"
+                            href={contact.url}
+                            className="font-bold text-xl"
+                            rel="noreferrer"
+                        >
+                            {contact.via}{" "}
+                            <span className="material-symbols-outlined text-sm">
+                                open_in_new
+                            </span>
+                        </Link>
+                    ))}
                 </div>
             </div>
-        </section>
-    );
-};
+        </div>
+    </section>
+);
 
 export default Contact;
