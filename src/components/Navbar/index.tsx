@@ -8,7 +8,7 @@ const Nav = styled.nav`
 `;
 
 const Navbar: FC = () => (
-    <Nav className="fixed top-8 right-1 sm:right-4 md:right-10 left-1 sm:left-4 md:left-10 h-[80px] rounded-lg z-50">
+    <Nav className="fixed top-1 right-1 sm:right-4 md:right-10 left-1 sm:left-4 md:left-10 h-[80px] rounded-lg z-50">
         <div className="mx-auto px-2 sm:px-6 lg:px-8 h-full">
             <div className="relative flex items-center justify-between h-full text-light">
                 <div className="hidden md:block font-body font-bold text-2xl cursor-pointer select-none text-warning">
@@ -25,19 +25,9 @@ const Navbar: FC = () => (
                             </ActiveLink>
                         </li>
                         <li className="ml-5 font-bold text-1xl">
-                            <ActiveLink href="/" activeClassName="text-light">
-                                <a>Work</a>
-                            </ActiveLink>
-                        </li>
-                        <li className="ml-5 font-bold text-1xl">
-                            <ActiveLink href="/" activeClassName="text-light">
-                                <a>About</a>
-                            </ActiveLink>
-                        </li>
-                        <li className="ml-5 font-bold text-1xl">
                             <ActiveLink
                                 href="/blog"
-                                activeClassName="text-light"
+                                activeClassName="text-warning"
                             >
                                 <a>Blog</a>
                             </ActiveLink>

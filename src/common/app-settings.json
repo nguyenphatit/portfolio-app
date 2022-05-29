@@ -1,4 +1,42 @@
 {
     "appName": "Tour De Force",
-    "appVersion": "v0.0.1"
+    "appVersion": "v0.0.1",
+    "contacts": [
+        {
+            "via": "Github",
+            "url": "https://github.com/nguyenphatit"
+        },
+        {
+            "via": "LinkedIn",
+            "url": "https://www.linkedin.com/in/phat-nguyen-102782136/"
+        },
+        {
+            "via": "Buy me a coffee",
+            "url": "https://www.buymeacoffee.com/nguyenphatit"
+        },
+        {
+            "via": "Stackoverflow",
+            "url": "https://stackoverflow.com/users/9157851/urito"
+        },
+        {
+            "via": "Dev.to",
+            "url": "https://dev.to/nguyenphatit"
+        },
+        {
+            "via": "Daily.dev",
+            "url": "https://app.daily.dev/nguyenphatit"
+        },
+        {
+            "via": "Email",
+            "url": "mailto:nguyenphatit@gmail.com"
+        },
+        {
+            "via": "Facebook",
+            "url": "https://www.facebook.com/nguyenphatit/"
+        },
+        {
+            "via": "Twitter",
+            "url": "https://twitter.com/nguyenphatit"
+        }
+    ]
 }

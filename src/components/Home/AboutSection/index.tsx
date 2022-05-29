@@ -1,14 +1,5 @@
 import Image from "next/image";
-import styled from "styled-components";
 import TextCard from "../TextCard";
-
-const TextCardOld = styled.div`
-    background-color: #ec5e4f;
-    background-image: url("images/jhin.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 30px;
-`;
 
 const AboutSection = () => {
     return (
@@ -22,7 +13,7 @@ const AboutSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#3FBC5D"
-                            backgroundImage="images/jhin.jpg"
+                            backgroundImage="images/mountains.jpg"
                             headingTxt="Hey, I am Phat Nguyen"
                             headingStyle="font-bold text-success text-3xl"
                             bodyTxt="I am a software developer currently working at
@@ -48,7 +39,7 @@ const AboutSection = () => {
                 <div className="container mx-auto py-20">
                     <div className="mx-1 md:mx-auto">
                         <h1 className="text-6xl font-bold text-dark py-10">
-                            Highlight.
+                            Highlights.
                         </h1>
                         <div className="font-bold text-dark text-lg w-full sm:w-3/4 leading-relaxed pl-6">
                             <ol className="list-disc">
@@ -74,7 +65,7 @@ const AboutSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#ec5e4f"
-                            backgroundImage="images/jhin.jpg"
+                            backgroundImage="images/archer.jpg"
                             headingTxt="I'm a Front-end Developer"
                             headingStyle="font-bold text-error text-3xl"
                             bodyTxt="I have experience in Javascript, Typescript,
@@ -91,50 +82,50 @@ const AboutSection = () => {
                 <div className="container mx-auto py-20 pt-5">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
-                            backgroundColor="#ec5e4f"
-                            backgroundImage="images/jhin.jpg"
+                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                            backgroundColor="#ffffff"
+                            backgroundImage="images/watercolor.jpg"
                             headingTxt="Speed"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="How quickly the client wants their website,
                                 and accordingly what tools will ensure high
                                 levels of speed."
-                            bodyStyle="text-light text-lg w-full pb-10"
+                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
                         />
                         <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
-                            backgroundColor="#ec5e4f"
-                            backgroundImage="images/jhin.jpg"
+                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                            backgroundColor="#ffffff"
+                            backgroundImage="images/watercolor.jpg"
                             headingTxt="Efficiency"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="Making sure not to waste resources, time
                             and/or effort, so users can get the most out
                             of the final product."
-                            bodyStyle="text-light text-lg w-full pb-10"
+                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
                         />
 
                         <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
-                            backgroundColor="#ec5e4f"
-                            backgroundImage="images/jhin.jpg"
+                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                            backgroundColor="#ffffff"
+                            backgroundImage="images/watercolor.jpg"
                             headingTxt="Ease-of-use"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="The site needs to be easy to use, easy
                             enough so users can navigate through the
                             site without breaking a sweat."
-                            bodyStyle="text-light text-lg w-full pb-10"
+                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
                         />
 
                         <TextCard
-                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
-                            backgroundColor="#ec5e4f"
-                            backgroundImage="images/jhin.jpg"
+                            className="min-h-[80vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
+                            backgroundColor="#ffffff"
+                            backgroundImage="images/watercolor.jpg"
                             headingTxt="Impact"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="As the representation of you or your
                             business online, the site should leave an
                             impact that encourages users to visit again."
-                            bodyStyle="text-light text-lg w-full pb-10"
+                            bodyStyle="text-dark text-lg w-full pb-10 font-bold"
                         />
                     </div>
                 </div>
@@ -151,25 +142,50 @@ const AboutSection = () => {
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                                 backgroundColor="#538FF7"
-                                backgroundImage="images/jhin.jpg"
+                                backgroundImage="images/spotted-rustic.jpg"
                                 headingTxt="Customer Relationship Management"
                                 headingStyle="font-bold text-primary text-2xl"
                                 bodyTxt="Allow users to approach and communicate
                                 in a lead effective way, and manage lead
                                 information such as account information,
                                 needs, contact and other issues to serve
-                                customers with better products"
+                                customers with better products."
                                 bodyStyle="text-light text-lg w-full pb-10"
+                                descriptionTxt="React.js, Redux, Redux-Saga, Node.js, REST API, Sequelize,js, MySQL"
+                                descriptionStyle="text-light text-lg w-full pb-10 font-bold"
                                 buttonExpand={true}
                                 expandedChildren={
                                     <div className="flex flex-col justify-center items-center text-center">
-                                        <div>Implement features, UI suggestion, coding and bug fixing</div>
+                                        <div>
+                                            Implement features, UI suggestion,
+                                            coding and bug fixing
+                                        </div>
                                         <hr />
                                         <div className="flex flex-row justify-center items-center text-center gap-4">
-                                            <Image src="/images/brands/reactjs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/nodejs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/sequelizejs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/mysql.svg" alt="" width={30} height={30} />
+                                            <Image
+                                                src="/images/brands/reactjs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/nodejs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/sequelizejs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/mysql.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
                                         </div>
                                     </div>
                                 }
@@ -177,22 +193,47 @@ const AboutSection = () => {
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                                 backgroundColor="#538FF7"
-                                backgroundImage="images/jhin.jpg"
+                                backgroundImage="images/spotted-rustic.jpg"
                                 headingTxt="Virtual Class"
                                 headingStyle="font-bold text-primary text-2xl"
                                 bodyTxt="Developing a web classroom online
                                 application, it allows the users teach
                                 and learn online"
                                 bodyStyle="text-light text-lg w-full pb-10"
+                                descriptionTxt="React.js, Gatsby.js, Redux, Redux-Thunk, Node.js, REST API, Sequelize,js, MySQL"
+                                descriptionStyle="text-light text-lg w-full pb-10 font-bold"
                                 buttonExpand={true}
                                 expandedChildren={
                                     <div className="flex flex-col justify-center items-center text-center">
-                                        <div>Implement features, coding and bug fixing</div>
+                                        <div>
+                                            Implement features, coding and bug
+                                            fixing
+                                        </div>
                                         <div className="flex flex-row justify-center items-center text-center gap-4">
-                                            <Image src="/images/brands/reactjs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/gatsbyjs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/nodejs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/mysql.svg" alt="" width={30} height={30} />
+                                            <Image
+                                                src="/images/brands/reactjs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/gatsbyjs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/nodejs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/mysql.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
                                         </div>
                                     </div>
                                 }
@@ -200,19 +241,29 @@ const AboutSection = () => {
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                                 backgroundColor="#538FF7"
-                                backgroundImage="images/jhin.jpg"
+                                backgroundImage="images/spotted-rustic.jpg"
                                 headingTxt="Food Delivery"
                                 headingStyle="font-bold text-primary text-2xl"
                                 bodyTxt="A web app that helps users to buy easily
                                 and to schedule services, appointment
                                 booking, from the store."
                                 bodyStyle="text-light text-lg w-full pb-10"
+                                descriptionTxt="React.js, Redux, Redux-Thunk"
+                                descriptionStyle="text-light text-lg w-full pb-10 font-bold"
                                 buttonExpand={true}
                                 expandedChildren={
                                     <div className="flex flex-col justify-center items-center text-center">
-                                        <div>Design, Implement features, coding and bug fixing</div>
+                                        <div>
+                                            Implement features, UI suggestion,
+                                            coding and bug fixing
+                                        </div>
                                         <div className="flex flex-row justify-center items-center text-center gap-4">
-                                            <Image src="/images/brands/reactjs.svg" alt="" width={30} height={30} />
+                                            <Image
+                                                src="/images/brands/reactjs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
                                         </div>
                                     </div>
                                 }
@@ -220,18 +271,28 @@ const AboutSection = () => {
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                                 backgroundColor="#538FF7"
-                                backgroundImage="images/jhin.jpg"
+                                backgroundImage="images/spotted-rustic.jpg"
                                 headingTxt="Drug Marketplace"
                                 headingStyle="font-bold text-primary text-2xl"
                                 bodyTxt="Develop a website that allows customers
                                 to order drugs and manage deliveries"
                                 bodyStyle="text-light text-lg w-full pb-10"
+                                descriptionTxt="Angular, Angular Material"
+                                descriptionStyle="text-light text-lg w-full pb-10 font-bold"
                                 buttonExpand={true}
                                 expandedChildren={
                                     <div className="flex flex-col justify-center items-center text-center">
-                                        <div>Implement features, code and bug fixing</div>
+                                        <div>
+                                            Implement features, code and bug
+                                            fixing
+                                        </div>
                                         <div className="flex flex-row justify-center items-center text-center gap-4">
-                                            <Image src="/images/brands/angular.svg" alt="" width={30} height={30} />
+                                            <Image
+                                                src="/images/brands/angular.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
                                         </div>
                                     </div>
                                 }
@@ -239,22 +300,47 @@ const AboutSection = () => {
                             <TextCard
                                 className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                                 backgroundColor="#538FF7"
-                                backgroundImage="images/jhin.jpg"
+                                backgroundImage="images/spotted-rustic.jpg"
                                 headingTxt="Billing Portal"
                                 headingStyle="font-bold text-primary text-2xl"
                                 bodyTxt="Develop a web application for invoice
                                 management website, this website manage
                                 the receipt of invoices"
                                 bodyStyle="text-light text-lg w-full pb-10"
+                                descriptionTxt="Angular, Node.js, REST API, Sequelize.js, MySQL"
+                                descriptionStyle="text-light text-lg w-full pb-10 font-bold"
                                 buttonExpand={true}
                                 expandedChildren={
                                     <div className="flex flex-col justify-center items-center text-center ">
-                                        <div>Implement features, UI suggestion, coding and bug fixing</div>
+                                        <div>
+                                            Implement features, UI suggestion,
+                                            coding and bug fixing
+                                        </div>
                                         <div className="flex flex-row justify-center items-center text-center gap-4">
-                                            <Image src="/images/brands/nodejs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/angular.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/sequelizejs.svg" alt="" width={30} height={30} />
-                                            <Image src="/images/brands/mysql.svg" alt="" width={30} height={30} />
+                                            <Image
+                                                src="/images/brands/angular.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/nodejs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/sequelizejs.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
+                                            <Image
+                                                src="/images/brands/mysql.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                            />
                                         </div>
                                     </div>
                                 }
