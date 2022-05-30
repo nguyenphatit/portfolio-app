@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
-    styledComponents: true
+    styledComponents: true,
   },
   images: {
-    domains: ['api.daily.dev']
-  }
-}
+    domains: ["api.daily.dev", "dev.to"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

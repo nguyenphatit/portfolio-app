@@ -22,29 +22,28 @@ const Card = styled.div`
 
 interface Props {
     title: string;
-    category: string;
+    description: string;
     url: string;
+    image: string;
 }
 
-const PostCard: FC<Props> = ({ title, category, url }) => {
-    return (
-        <Link href={`${url}`} target="_blank">
-            <Card>
-                <Image
-                    src={`/images/javascript.png`}
-                    width="100%"
-                    height="60%"
-                    layout="responsive"
-                    objectFit="fill"
-                    alt={title}
-                />
-                <h1 className="font-heading py-4 px-2 text-primary text-xl">
-                    {title}
-                </h1>
-                <div className="px-2 pb-4">#{category}</div>
-            </Card>
-        </Link>
-    );
-};
+const PostCard: FC<Props> = ({ title, description, url, image }) => (
+    <Link href={`${url}`} target="_blank">
+        <Card>
+            <Image
+                src={image}
+                width="100%"
+                height="60%"
+                layout="responsive"
+                objectFit="fill"
+                alt={title}
+            />
+            <h1 className="font-heading py-4 px-2 text-primary text-xl">
+                {title}
+            </h1>
+            <div className="px-2 pb-4">{description}</div>
+        </Card>
+    </Link>
+);
 
 export default PostCard;
