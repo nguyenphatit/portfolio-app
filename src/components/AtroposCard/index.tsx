@@ -4,17 +4,20 @@ import { FC } from "react";
 
 interface Props {
     children: React.ReactNode;
+    className?: string;
+    shadowScale?: number;
+    activeOffset?: number;
 }
 
-const AtroposCard: FC<Props> = ({ children }) => {
+const AtroposCard: FC<Props> = ({ children, className, activeOffset = 40, shadowScale = 0.9 }) => {
     return (
         <Atropos
-            activeOffset={40}
-            shadowScale={0.9}
+            activeOffset={activeOffset}
+            shadowScale={shadowScale}
             onEnter={() => console.log("Enter")}
             onLeave={() => console.log("Leave")}
             onRotate={(x, y) => console.log("Rotate", x, y)}
-            className="rounded-lg"
+            className={`${className} rounded-lg`}
         >
             {children}
         </Atropos>

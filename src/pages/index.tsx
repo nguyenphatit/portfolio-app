@@ -4,10 +4,10 @@ import settings from "common/app-settings.json";
 import HeroSection from "components/Home/HeroSection";
 import AboutSection from "components/Home/AboutSection";
 import Contact from "components/Home/ContactSection";
-import DonateSection from "components/Home/DonateSection";
 import HighlightSection from "components/Home/HighlightSection";
 import SkillSection from "components/Home/SkillSection";
 import FeaturedProjectSection from "components/Home/FeaturedProjectSection";
+import ActionSection from "components/Home/ActionSection";
 
 const Home: NextPage = () => {
     return (
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             <SkillSection />
             <FeaturedProjectSection />
             <Contact />
-            <DonateSection />
+            <ActionSection />
         </>
     );
 };
