@@ -19,31 +19,31 @@ const HeroSection = () => {
     const y2 = useTransform(scrollY, [0, 300], [0, -100]);
 
     return (
-        <>
-            <Wrapper className="h-screen flex flex-col relative justify-center items-center origin-center w-full">
-                <Content
-                    className="flex flex-col justify-center items-center p-6 rounded-3xl"
-                    style={{ y: y1 }}
-                >
-                    <div className="font-heading text-4xl text-warning uppercase text-center">
-                        Welcome to
-                    </div>
-                    <div className="hidden sm:block font-heading text-4xl text-warning uppercase text-center">
-                        the
-                    </div>
-                    <div className="font-heading text-4xl text-warning uppercase text-center">
-                        <span className="block sm:hidden">the</span> Tour De
-                        Force
-                    </div>
-                </Content>
-                <motion.div className="absolute bottom-10 text-center cursor-pointer select-none" style={{ y: y2 }}>
-                    <span className="material-icons text-light border-2 rounded-full">
-                        expand_more
-                    </span>
-                    <h3 className="font-bold text-light">Scroll Down</h3>
-                </motion.div>
-            </Wrapper>
-        </>
+        <Wrapper className="h-screen flex flex-col relative justify-center items-center origin-center w-full">
+            <Content
+                className="flex flex-col justify-center items-center p-6 rounded-3xl"
+                style={{ y: y1 }}
+            >
+                <div className="font-heading text-4xl text-warning uppercase text-center">
+                    Welcome to
+                </div>
+                <div className="hidden sm:block font-heading text-4xl text-warning uppercase text-center">
+                    the
+                </div>
+                <div className="font-heading text-4xl text-warning uppercase text-center">
+                    <span className="block sm:hidden">the</span> Tour De Force
+                </div>
+            </Content>
+            <motion.div
+                className="absolute bottom-10 text-center cursor-pointer select-none"
+                style={{ y: y2 }}
+            >
+                <span className="material-icons text-light border-2 rounded-full">
+                    expand_more
+                </span>
+                <h3 className="font-bold text-light">Scroll Down</h3>
+            </motion.div>
+        </Wrapper>
     );
 };
 

@@ -1,14 +1,13 @@
+import { motion, Variants } from "framer-motion";
 import React, { FC } from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div<{
-    backgroundColor: string;
-    backgroundImage?: string;
+const Wrapper = styled(motion.div)<{
+    backgroundcolor: string;
+    backgroundimage?: string;
 }>`
-    background-color: ${(props) => props.backgroundColor};
-    ${(props) =>
-        props.backgroundImage &&
-        `background-image: url(${props.backgroundImage})`};
+    background-color: ${(props) => props.backgroundcolor};
+    ${(props) => props.backgroundimage && `background-image: url(${props.backgroundimage})`};
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
@@ -36,19 +35,16 @@ const Expanded = styled.div<{ expanded: boolean; backgroundColor: string }>`
     right: 0;
     bottom: 0;
     visibility: ${(props) => (props.expanded ? "visible" : "hidden")};
-    background-color: ${(props) =>
-        props.expanded ? props.backgroundColor : "transparent"};
+    background-color: ${(props) => props.expanded ? props.backgroundColor : "transparent"};
     transition: all 0.3s ease-in-out;
-    ${(props) =>
-        props.expanded ? "transition-delay: 0.2s;" : "transition-delay: 0.5s;"};
+    ${(props) => props.expanded ? "transition-delay: 0.2s;" : "transition-delay: 0.5s;"};
 `;
 
 const ExpandedText = styled.div<{ expanded: boolean }>`
     visibility: ${(props) => (props.expanded ? "visible" : "hidden")};
     transform: translateY(${(props) => (props.expanded ? "0" : "-30px")});
     transition: all 0.3s ease-in-out;
-    ${(props) =>
-        props.expanded ? "transition-delay: 0.5s;" : "transition-delay: 0.2s;"};
+    ${(props) => props.expanded ? "transition-delay: 0.5s;" : "transition-delay: 0.2s;"};
 `;
 
 interface Props {
@@ -64,6 +60,7 @@ interface Props {
     descriptionLink?: string; // description link of the component
     buttonExpand?: boolean; // button exposant of the component
     expandedChildren?: JSX.Element; // expanded children of the component
+    variants?: Variants;
 }
 
 const TextCard: FC<Props> = ({
@@ -79,12 +76,14 @@ const TextCard: FC<Props> = ({
     descriptionLink,
     buttonExpand,
     expandedChildren,
+    variants,
 }) => {
     const [expanded, setExpanded] = React.useState<boolean>(false);
     return (
         <Wrapper
-            backgroundColor={backgroundColor}
-            backgroundImage={backgroundImage}
+            variants={variants}
+            backgroundcolor={backgroundColor}
+            backgroundimage={backgroundImage}
             className={className}
         >
             <h1 className={headingStyle}>{headingTxt}</h1>

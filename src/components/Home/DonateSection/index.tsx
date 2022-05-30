@@ -2,13 +2,22 @@ import styled from "styled-components";
 import BuyMeACoffee from "../BuyMeACoffee";
 
 const Heading = styled.h1`
-    background: -webkit-linear-gradient(320deg, #06B7DB -63.59%, #FF4ECD -20.3%, #0072F5 70.46%);
+    background: -webkit-linear-gradient(
+        320deg,
+        #06b7db -63.59%,
+        #ff4ecd -20.3%,
+        #0072f5 70.46%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 `;
 
 const DonateSection = () => {
-    return <BuyMeACoffee />
+    return (
+        <>
+            <BuyMeACoffee />
+        </>
+    );
     // return (
     //     <section className="bg-[#F5F5F7] py-10">
     //         <div className="container mx-auto">
@@ -17,7 +26,7 @@ const DonateSection = () => {
     //                     You like my work?
     //                 </Heading>
     //                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        
+
     //                 </div>
     //             </div>
     //         </div>
