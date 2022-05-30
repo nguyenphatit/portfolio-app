@@ -5,14 +5,8 @@ import Document, {
     NextScript,
     DocumentContext,
 } from "next/document";
-import Script from "next/script";
 
-const html = `window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag('js', new Date());
-                gtag('config', 'G-MFJ52S9R27');`;
+const html = `window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${process.env.NEXT_PULIC_GOOGLE_ANALYTICS}');`;
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
@@ -37,13 +31,13 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     {/* Global site tag (gtag.js) - Google Analytics */}
-                    <Script
-                        strategy="afterInteractive"
-                        src={`https://www.googletagmanager.com/gtag/js?id=G-MFJ52S9R27`}
+                    <script
+                        async
+                        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PULIC_GOOGLE_ANALYTICS}`}
                     />
-                    <Script
+                    <script
                         id="gtag"
-                        strategy="afterInteractive"
+                        async
                         dangerouslySetInnerHTML={{ __html: html }}
                     />
                 </Head>
