@@ -7,6 +7,7 @@ const Wrapper = styled.section`
     background-image: url("images/cat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow-x: hidden;
 `;
 
