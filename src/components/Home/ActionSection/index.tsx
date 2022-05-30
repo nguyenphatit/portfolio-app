@@ -67,9 +67,6 @@ const ActionSection = () => {
                     </div>
                 </div>
             </div>
-            <>
-                <BuyMeACoffee />
-            </>
         </section>
     );
 };

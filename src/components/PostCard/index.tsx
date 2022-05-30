@@ -25,9 +25,20 @@ interface Props {
     description: string;
     url: string;
     image: string;
+    publishedAt: string;
+    readingTimeMinutes: number;
+    tagList: string[];
 }
 
-const PostCard: FC<Props> = ({ title, description, url, image }) => (
+const PostCard: FC<Props> = ({
+    title,
+    description,
+    url,
+    image,
+    publishedAt,
+    readingTimeMinutes,
+    tagList,
+}) => (
     <Link href={`${url}`} target="_blank">
         <Card>
             <Image
@@ -41,6 +52,15 @@ const PostCard: FC<Props> = ({ title, description, url, image }) => (
             <h1 className="font-heading py-4 px-2 text-primary text-xl">
                 {title}
             </h1>
+            <div className="px-2 pb-2">
+                <b>Published:</b> {new Date(publishedAt).toLocaleDateString()}
+            </div>
+            <div className="px-2 pb-2">
+                <b>Reading Time:</b>{" "}
+                {readingTimeMinutes === 1
+                    ? `${readingTimeMinutes} minute`
+                    : `${readingTimeMinutes} minutes`}
+            </div>
             <div className="px-2 pb-4">{description}</div>
         </Card>
     </Link>
