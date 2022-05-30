@@ -16,7 +16,7 @@ const Contact = () => (
         <div className="container mx-auto">
             <div className="w-full">
                 <h1 className="text-6xl font-bold text-warning py-10 mx-1 md:mx-auto">
-                    Contact.
+                    Contacts.
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {settings.contacts.map((contact) => (

@@ -42,7 +42,7 @@ const AboutSection = () => {
                         <h1 className="text-6xl font-bold text-dark py-10">
                             Highlights.
                         </h1>
-                        <div className="font-bold text-dark text-lg w-full sm:w-3/4 leading-relaxed">
+                        <div className="font-bold text-dark text-lg w-full sm:w-3/4 leading-relaxed pl-2">
                             <div>2018 - Present: Working at TMA Solutions</div>
                             <ol className="list-disc pl-6">
                                 <li>3 years React.JS development</li>

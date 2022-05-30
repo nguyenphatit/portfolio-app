@@ -22,7 +22,7 @@ const HeroSection = () => {
         <>
             <Wrapper className="h-screen flex flex-col relative justify-center items-center origin-center w-full">
                 <Content
-                    className="flex flex-col justify-center items-center p-6 rounded-lg"
+                    className="flex flex-col justify-center items-center p-6 rounded-3xl"
                     style={{ y: y1 }}
                 >
                     <div className="font-heading text-4xl text-warning uppercase text-center">
