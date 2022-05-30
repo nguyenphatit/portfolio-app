@@ -10,6 +10,7 @@ import styled from "styled-components";
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const response = await axios.get(`${DEV_TO_URL}${process.env.USER_NAME}`);
+    console.log(response.data[0]);
     return {
         props: {
             articles: response.data,
@@ -52,10 +53,10 @@ const Blog: NextPage<Props> = ({ articles }) => (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {articles.map((article: Article, index: number) => (
                         <PostCard
-                            key={index}
+                            key={article.id}
                             title={article.title}
                             description={article.description}
-                            image={article.social_image}
+                            image={article.cover_image || article.social_image}
                             url={article.canonical_url}
                             publishedAt={article.published_at}
                             readingTimeMinutes={article.reading_time_minutes}

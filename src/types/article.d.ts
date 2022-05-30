@@ -1,6 +1,8 @@
 export type Article = {
+    id: number;
     title: string;
     description: string;
+    cover_image: string;
     social_image: string;
     canonical_url: string;
     published_at: string;
