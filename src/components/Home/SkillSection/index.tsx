@@ -34,7 +34,7 @@ const SkillSection = () => {
                     <TextCard
                         className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                         backgroundColor="#ec5e4f"
-                        backgroundImage="images/archer.jpg"
+                        backgroundImage="images/archer.webp"
                         headingTxt="I'm a Front-end Developer"
                         headingStyle="font-bold text-error text-3xl"
                         bodyTxt="I have experience in Javascript, Typescript,
@@ -54,7 +54,7 @@ const SkillSection = () => {
                         <TextCard
                             className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
                             backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
+                            backgroundImage="images/watercolor.webp"
                             headingTxt="Speed"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="How quickly the client wants their website,
@@ -67,7 +67,7 @@ const SkillSection = () => {
                         <TextCard
                             className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
                             backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
+                            backgroundImage="images/watercolor.webp"
                             headingTxt="Efficiency"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="Making sure not to waste resources, time
@@ -80,7 +80,7 @@ const SkillSection = () => {
                         <TextCard
                             className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
                             backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
+                            backgroundImage="images/watercolor.webp"
                             headingTxt="Ease-of-use"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="The site needs to be easy to use, easy
@@ -93,7 +93,7 @@ const SkillSection = () => {
                         <TextCard
                             className="min-h-[60vh] p-10 relative mx-1 md:mx-auto flex flex-col justify-center"
                             backgroundColor="#ffffff"
-                            backgroundImage="images/watercolor.jpg"
+                            backgroundImage="images/watercolor.webp"
                             headingTxt="Impact"
                             headingStyle="font-bold text-error text-2xl"
                             bodyTxt="As the representation of you or your

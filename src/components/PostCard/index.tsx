@@ -48,6 +48,7 @@ const PostCard: FC<Props> = ({
                 layout="responsive"
                 objectFit="fill"
                 alt={title}
+                priority
             />
             <h1 className="font-heading py-4 px-2 text-primary text-xl">
                 {title}

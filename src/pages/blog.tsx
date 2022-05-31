@@ -10,7 +10,6 @@ import styled from "styled-components";
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const response = await axios.get(`${DEV_TO_URL}${process.env.USER_NAME}`);
-    console.log(response.data[0]);
     return {
         props: {
             articles: response.data,

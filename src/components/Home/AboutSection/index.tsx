@@ -35,7 +35,7 @@ const AboutSection = () => {
                     <TextCard
                         className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                         backgroundColor="#3FBC5D"
-                        backgroundImage="images/mountains.jpg"
+                        backgroundImage="images/mountains.webp"
                         headingTxt="Hey, I am Phat Nguyen"
                         headingStyle="font-bold text-success text-3xl"
                         bodyTxt="I am a software developer currently working at

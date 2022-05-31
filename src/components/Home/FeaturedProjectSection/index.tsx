@@ -36,7 +36,7 @@ const FeaturedProjectSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#538FF7"
-                            backgroundImage="images/spotted-rustic.jpg"
+                            backgroundImage="images/spotted-rustic.webp"
                             headingTxt="Customer Relationship Management"
                             headingStyle="font-bold text-primary text-2xl"
                             bodyTxt="Allow users to approach and communicate
@@ -87,7 +87,7 @@ const FeaturedProjectSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#538FF7"
-                            backgroundImage="images/spotted-rustic.jpg"
+                            backgroundImage="images/spotted-rustic.webp"
                             headingTxt="Virtual Class"
                             headingStyle="font-bold text-primary text-2xl"
                             bodyTxt="Developing a web classroom online
@@ -135,7 +135,7 @@ const FeaturedProjectSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#538FF7"
-                            backgroundImage="images/spotted-rustic.jpg"
+                            backgroundImage="images/spotted-rustic.webp"
                             headingTxt="Food Delivery"
                             headingStyle="font-bold text-primary text-2xl"
                             bodyTxt="A web app that helps users to buy easily
@@ -165,7 +165,7 @@ const FeaturedProjectSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#538FF7"
-                            backgroundImage="images/spotted-rustic.jpg"
+                            backgroundImage="images/spotted-rustic.webp"
                             headingTxt="Drug Marketplace"
                             headingStyle="font-bold text-primary text-2xl"
                             bodyTxt="Develop a website that allows customers
@@ -193,7 +193,7 @@ const FeaturedProjectSection = () => {
                         <TextCard
                             className="min-h-[80vh] p-10 relative mx-1 md:mx-auto"
                             backgroundColor="#538FF7"
-                            backgroundImage="images/spotted-rustic.jpg"
+                            backgroundImage="images/spotted-rustic.webp"
                             headingTxt="Billing Portal"
                             headingStyle="font-bold text-primary text-2xl"
                             bodyTxt="Develop a web application for invoice

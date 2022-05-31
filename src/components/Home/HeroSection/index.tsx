@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Wrapper = styled.section`
     background-color: #132b79;
-    background-image: url("images/cat.jpg");
+    background-image: url("images/cat.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
