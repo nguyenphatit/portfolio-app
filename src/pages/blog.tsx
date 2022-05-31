@@ -1,7 +1,6 @@
 import { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
 import settings from "common/app-settings.json";
-import devBlog from "resources/dev-blog.json";
 import PostCard from "components/PostCard";
 import axios from "axios";
 import { DEV_TO_URL } from "common/constants";
