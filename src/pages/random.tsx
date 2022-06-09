@@ -19,8 +19,8 @@ const Random: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <RandomNumberGeneratorSection />
-            {/* <hr /> */}
-            {/* <RandomTiersGeneratorSection /> */}
+            <hr />
+            <RandomTiersGeneratorSection />
         </>
     );
 };

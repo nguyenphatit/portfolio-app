@@ -19,10 +19,6 @@ const RandomNumberGeneratorSection: FC = () => {
     const [result, setResult] = useState<number | undefined>(undefined);
     const [time, setTime] = useState<Date | undefined>(undefined);
 
-    const onChange = (value: number, name: string) => {
-        name === "min" ? setMin(value) : setMax(value);
-    };
-
     const onGenerate = () => {
         setResult(Math.floor(Math.random() * (max - min + 1)) + min);
         setTime(new Date());
@@ -30,7 +26,11 @@ const RandomNumberGeneratorSection: FC = () => {
 
     useEffect(() => {
         const keyEvent = (event: KeyboardEvent) => {
-            if (event.isComposing || event.keyCode === 13 || event.keyCode === 32) {
+            if (
+                event.isComposing ||
+                event.keyCode === 13 ||
+                event.keyCode === 32
+            ) {
                 onGenerate();
                 event.preventDefault();
             }
@@ -48,19 +48,38 @@ const RandomNumberGeneratorSection: FC = () => {
                 <Heading className="text-6xl font-bold text-success py-10 mx-1 md:mx-auto text-center">
                     Random Number Generator
                 </Heading>
-                <div className="flex justify-center items-center">
-                    <InputNumber
-                        label="Min"
-                        name="min"
-                        defaultValue={min}
-                        onChange={onChange}
-                    />
-                    <InputNumber
-                        label="Max"
-                        name="max"
-                        defaultValue={max}
-                        onChange={onChange}
-                    />
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div className="mx-2">
+                        <label className="font-bold mr-4" htmlFor="min">
+                            Min
+                        </label>
+                        <input
+                            className="bg-transparent border-2 border-gray-600 rounded-lg py-2 px-4 text-gray-700"
+                            id="min"
+                            type={"number"}
+                            defaultValue={0}
+                            name="min"
+                            onChange={(e) => {
+                                setMin(Number(e.target.value || 0));
+                            }}
+                        />
+                    </div>
+
+                    <div className="mx-2">
+                        <label className="font-bold mr-4" htmlFor="max">
+                            Max
+                        </label>
+                        <input
+                            className="bg-transparent border-2 border-gray-600 rounded-lg py-2 px-4 text-gray-700"
+                            id="max"
+                            type={"number"}
+                            defaultValue={100}
+                            name="max"
+                            onChange={(e) => {
+                                setMax(Number(e.target.value || 0));
+                            }}
+                        />
+                    </div>
                     <button
                         onClick={onGenerate}
                         className="bg-primary border-2 border-primary hover:border-dark rounded-lg py-2 px-4 text-light"

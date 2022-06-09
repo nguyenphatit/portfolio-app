@@ -33,7 +33,7 @@ const InputNumber: FC<Props> = ({
                 max={max}
                 min={min}
                 name={name}
-                onChange={e => onChange(Number(e.target.value || defaultValue), label)}
+                onChange={e => onChange(Number(e.target.value || defaultValue), name)}
             />
         </div>
     );
